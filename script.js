@@ -5,9 +5,11 @@ var adjective = [
   "bad",
   "best",
   "better",
+  "delicious",
   "big",
   "certain",
   "clear",
+  "funky"
   "different",
   "early",
   "easy",
@@ -35,6 +37,7 @@ var adjective = [
   "old",
   "only",
   "other",
+  "awkward"
   "political",
   "possible",
   "public",
@@ -194,14 +197,15 @@ function randomiser(arr) {
 }
 
 function quote(num) {
-  const sentence =
-  "The " +
-  randomiser(adjective) + " " + randomiser(color) + " " + randomiser(noun) + " " + randomiser(verb) + " " + randomiser(adverb) + " " + randomiser(preposition) + " " + "the" + " " + randomiser(adjective) + " " + randomiser(noun) + ".";
-
   var quotes = [];
 
   for (var x = 0; x < num; x++) {
+    const sentence =
+  "The " +
+  randomiser(adjective) + " " + randomiser(color) + " " + randomiser(noun) + " " + randomiser(verb) + " " + randomiser(adverb) + " " + randomiser(preposition) + " " + "the" + " " + randomiser(adjective) + " " + randomiser(noun) + ".";
+
     quotes.push(sentence);
+
   }
   return quotes;
 
