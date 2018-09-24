@@ -178,4 +178,19 @@ $("i").click(function() {
     $(this).addClass("icon-clicked");
   });
 
+//submit button
+$(".submit").click(function() {
+  //VAR NO_OF_QUOTES = THE QTY BUTTON VALUE CURRENTLY SELECTED
+
+  //IF THE ICON IS HAPPY, CALL THE HAPPY QUOTE FUNCTION(NO_OF_QUOTES)
+  //ELSE IF THE ICON IS RANDOM, CALL THE RANDOM QUOTE FUNCTION(NO_OF_QUOTES)
+  ////ELSE IF THE ICON IS SAD, CALL THE SAD QUOTE FUNCTION(NO_OF_QUOTES)
+  });
+
+
+
+
+
 //TESTING
+
+var title = document.querySelector("header");
