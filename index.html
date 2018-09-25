@@ -8,10 +8,19 @@
 <body>
 
   <div class="container">
-    <header></header>
+    <header>Sentence Maker</header>
 
     <div class="interface">
 
+      <div id="happy_sad" class="row">
+
+      <div class="icons">
+          <i data-face="happy" class="far fa-smile uplifting"></i>
+          <i data-face="random" class="far fa-dizzy random" ></i>
+          <i data-face="sad" class="far fa-sad-tear depressing"></i>
+        </div>
+
+       </div>
       <div id="qty" class="row">
 
         <div class="btn-group">
@@ -22,47 +31,22 @@
           <button class="button btn-normal-color">5</button>
         </div>
 
-
-
-
       </div>
-
-      <div id="toggle" class="row">
-
-
-    <div class="slidee">
-      <p>random</p>
-      <label class="switch">
-        <input type="checkbox">
-        <span class="slider"></span>
-      </label>
-      <p>custom</p>
-     </div>
-
-      </div>
-
-      <div id="happy_sad" class="row">
-
-      <div class="icons">
-          <i class="far fa-smile"></i>
-           <i class="far fa-sad-tear"></i>
-        </div>
-
-       </div>
-
-
-
-
 
   </div>
 
-  <div class="submit-button">
-        <button class="submit">I'm hot, like pol pot. Squeeze me.</button>
+    <div id="results-container" class="row">
+      <ol id="results"></ol>
     </div>
 
+    <div class="submit-button">
+        <button class="submit">Get quotes</button>
+    </div>
 
+    <div class="exit-button-container">
+      <button class="exit-button">exit</button>
+    </div>
   </div>
-
 
 </body>
 </html>

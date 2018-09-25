@@ -123,7 +123,10 @@ function random_quote(num) {
   "The " +
   random_array(positive_adjective, negative_adjective) + " " + randomiser(color) + " " + randomiser(noun) + " " + randomiser(verb) + " " + random_array(positive_adverb, negative_adverb) + " " + randomiser(preposition) + " " + "the" + " " + random_array(positive_adjective, negative_adjective) + " " + randomiser(noun) + ".";
 
-    quotes.push(sentence);
+    const sentence2 =`The ${random_array(positive_adjective, negative_adjective)} ${randomiser(color)} ${randomiser(noun)} ${randomiser(verb)} ${random_array(positive_adverb, negative_adverb)} ${randomiser(preposition)} the ${random_array(positive_adjective, negative_adjective)} ${randomiser(noun)}.`;
+
+
+    quotes.push(sentence2);
 
   }
   return quotes;
@@ -165,7 +168,7 @@ function sad_quote(num) {
 //DOM Manipulation
 
 //Change button color when selected
-$("button").click(function() {
+$(".button").click(function() {
     $('button').removeClass('btn-clicked');
     $(this).removeClass(".btn-normal-color");
     $(this).addClass("btn-clicked");
@@ -178,4 +181,44 @@ $("i").click(function() {
     $(this).addClass("icon-clicked");
   });
 
-//TESTING
+//FUNCTION TO CREATE AND POST QUOTES:
+$('.submit').on('click', function() {
+  //create an empty variable to store new quotes.
+  let generatedQuotes = [];
+
+  //1. GET INFO FROM ICONS ONCE CLICKED
+  //grab the data from data-face from the icon-clicked class.
+  //set that data to a variable called 'face'.
+  const face = $('.icon-clicked').data('face');
+
+  //2. GET INFO FROM QTY BUTTONS ONCE CLICKED:
+  //grab text from the .btn-clicked class and convert it to integer.
+  //Set that text to a 'qty' variable.
+  const qty = parseInt($('.btn-clicked').text());
+
+  //3. CLEAR PREVIOUS QUOTES:
+  //...By setting #results to an empty string.
+  $("#results").html("");
+
+  //DISPLAY THE QUOTES CONTAINER
+  $("#results-container").css("display", "block");
+
+  //4. CHOOSE THE CORRECT QUOTE MACHINE:
+  //... then add these quotes to the generatedQuotes array, number of quotes based on the argument.
+  if(face === "happy") {
+    generatedQuotes = happy_quote(qty);
+  } else if(face === "sad") {
+    generatedQuotes = sad_quote(qty);
+  } else { //random is the default option, in case the user doesn't click an icon.
+    generatedQuotes = random_quote(qty);
+  }
+
+  //5. POST A NEW SET OF QUOTES TO HTML:
+  //For each quote in the 'generatedQuotes' array, append it to #results in a <li> tag.
+  generatedQuotes.forEach(function(quote) {
+    $('#results').append(`<li>${quote}</li>`)
+  });
+
+
+
+})
