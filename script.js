@@ -222,3 +222,14 @@ $('.submit').on('click', function() {
 
 
 })
+
+//HIDE EVERYTHING AND DISPLAY THANK YOU MESSAGE
+$(".exit-button").on('click', function() {
+      $(".container").toggle();
+      $(".exit-message").toggle();
+                     });
+
+$(".go-back-button").on('click', function() {
+      $(".container").toggle();
+      $(".exit-message").toggle();
+});
