@@ -1,12 +1,12 @@
 .container {
-  padding: 70px 0;
-  max-width: 500px;
+  padding: 30px 0;
+  max-width: 700px;
   margin: auto;
 }
 
 header {
   text-align: center;
-  font-size: 50px;
+  font-size: 30px;
   padding: 10px;
 }
 
@@ -31,11 +31,6 @@ h3 {
   text-align: center;
 }
 
-.radio-buttons {
-  display: flex;
-  justify-content: center;
-}
-
 /*BUTTONS*/
 
 .btn-normal-color {
@@ -48,10 +43,10 @@ h3 {
 
     border: 1px solid white;
     color: white; /* White text */
-    padding: 15px 15px; /* Some padding */
+    padding: 20px 20px; /* Some padding */
     cursor: pointer; /* Pointer/hand icon */
     float: left; /* Float the buttons side by side */
-
+    font-size: 20px;
 }
 .btn-group button:not(:last-child) {
     border-right: none; /* Prevent double borders */
@@ -68,7 +63,6 @@ h3 {
 .btn-group button:hover {
     background-color: #ccc;
 }
-
 
 /*happy or sad*/
 
@@ -89,6 +83,21 @@ h3 {
   color: red;
 }
 
+/*RESULTS*/
+
+#results-container {
+  border: 2px solid black;
+  margin-top: 5px;
+  margin-left: 10px;
+  margin-right: 10px;
+  display: none;
+}
+
+li {
+  padding: 5px;
+  font-size: 20px;
+}
+
 /*SUBMIT BUTTON */
 
 .submit-button {
@@ -98,6 +107,22 @@ h3 {
 }
 .submit {
     background-color: #555555;
+    border: 1px solid black;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+}
+
+.exit-button-container {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.exit-button {
+  background-color: #555555;
     border: 1px solid black;
     color: white;
     padding: 15px 32px;
