@@ -181,8 +181,27 @@ $("i").click(function() {
     $(this).addClass("icon-clicked");
   });
 
-//FUNCTION TO CREATE AND POST QUOTES:
+//VALIDATION: RETURN A STATEMENT IF USER DOESN'T CHOOSE A FACE:
+//set a variable to false
+  var icon_is_clicked = false;
+  //set the same variable to true if user clicks on a face
+  $('.far').on('click', function() {
+    icon_is_clicked = true;
+  })
+
+//MAIN FUNCTION TO CREATE AND POST QUOTES:
 $('.submit').on('click', function() {
+
+  //if the user hasn't clicked on a face:
+  //create a message telling them to do so, and stop program.
+  if (icon_is_clicked == false) {
+     $(".error").css("display", "inline")
+    return;
+  }
+
+  //When user chooses a face, remove error message.
+  $(".error").css("display", "none");
+
   //create an empty variable to store new quotes.
   let generatedQuotes = [];
 
@@ -211,7 +230,7 @@ $('.submit').on('click', function() {
     generatedQuotes = sad_quote(qty);
   } else { //random is the default option, in case the user doesn't click an icon.
     generatedQuotes = random_quote(qty);
-  }
+  };
 
   //5. POST A NEW SET OF QUOTES TO HTML:
   //For each quote in the 'generatedQuotes' array, append it to #results in a <li> tag.
@@ -219,9 +238,7 @@ $('.submit').on('click', function() {
     $('#results').append(`<li>${quote}</li>`)
   });
 
-
-
-})
+});
 
 //HIDE EVERYTHING AND DISPLAY THANK YOU MESSAGE
 $(".exit-button").on('click', function() {
