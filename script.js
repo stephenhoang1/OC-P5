@@ -20,68 +20,68 @@ var noun = [
 ]
 var verb = [
   "acts",
-"agrees",
-"arrives",
-"asks",
-"bakes",
-"brings",
-"builds",
-"buys",
-"calls",
-"climbs",
-"closes",
-"comes",
-"cries",
-"dances",
-"dreams",
-"drinks",
-"eats",
-"enters",
-"exits",
-"falls",
-"fixes",
-"gives",
-"goes",
-"grabs",
-"helps",
-"hits",
-"hops",
-"insults",
-"jokes",
-"jumps",
-"kicks",
-"laughs",
-"leaves",
-"lifts",
-"listens",
-"makes",
-"marches",
-"moves",
-"nods",
-"opens",
-"plays",
-"pushes",
-"reads",
-"rides",
-"runs",
-"sends",
-"shouts",
-"sings",
-"sits",
-"smiles",
-"spends",
-"stands",
-"talks",
-"thinks",
-"throws",
-"touches",
-"turns",
-"visits",
-"votes",
-"waits",
-"walks",
-"writes",
-"yells"
+  "agrees",
+  "arrives",
+  "asks",
+  "bakes",
+  "brings",
+  "builds",
+  "buys",
+  "calls",
+  "climbs",
+  "closes",
+  "comes",
+  "cries",
+  "dances",
+  "dreams",
+  "drinks",
+  "eats",
+  "enters",
+  "exits",
+  "falls",
+  "fixes",
+  "gives",
+  "goes",
+  "grabs",
+  "helps",
+  "hits",
+  "hops",
+  "insults",
+  "jokes",
+  "jumps",
+  "kicks",
+  "laughs",
+  "leaves",
+  "lifts",
+  "listens",
+  "makes",
+  "marches",
+  "moves",
+  "nods",
+  "opens",
+  "plays",
+  "pushes",
+  "reads",
+  "rides",
+  "runs",
+  "sends",
+  "shouts",
+  "sings",
+  "sits",
+  "smiles",
+  "spends",
+  "stands",
+  "talks",
+  "thinks",
+  "throws",
+  "touches",
+  "turns",
+  "visits",
+  "votes",
+  "waits",
+  "walks",
+  "writes",
+  "yells"
 ]
 var positive_adverb = [
 "abidingly", "ably", "absolutely", "abundantly", "accommodatingly", "accordingly", "accurately", "actively", "actually", "acutely", "adeptly", "admirably", "admiringly", "adorably", "adoringly", "adroitly", "aesthetically", "affably", "affectingly", "affectionately", "affirmatively", "affluently", "agelessly", "agilely", "agreeably", "alertly", "altruistically", "always", "amazingly", "ambitiously", "amenably", "amiably", "amply", "amusingly", "anew", "angelically", "appetizingly", "appreciably", "appreciatively", "appropriately", "approvingly", "aptly", "ardently", "arrestingly", "articulately", "artistically", "assertively", "assiduously", "assuredly", "astonishingly", "astoundingly", "astutely", "attentively", "attractively", "atypically", "augustly", "auspiciously", "authentically", "authoritatively", "autonomously", "avidly", "awesomely", "beauteously", "beautifully", "believably", "beneficently", "beneficially", "benevolently", "benignly", "best", "blazingly", "blessedly", "blissfully", "blithely", "boisterously", "boldly", "bounteously", "bountifully", "bravely", "brightly", "brilliantly", "briskly", "brotherly", "buoyantly", "busily", "calmly", "candidly", "cannily", "capably", "captivatingly", "carefully", "caringly", "casually", "causatively", "celestially", "cerebrally", "certainly", "charitably", "charmingly", "cheerfully", "chicly", "chivalrously", "civilly", "clairvoyantly", "cleanly", "clearly", "clemently", "cleverly", "cogently", "coherently", "colourfully", "comfortably", "comfortingly", "comically", "commandingly", "commendably", "commiseratively", "communicatively", "companionably", "compassionately", "compatibly", "compellingly", "competently", "completely", "concisely", "conclusively", "confidently", "confirmingly", "congenially", "congruously", "conscientiously", "consciously", "considerately", "consistently", "consonantly", "constructively", "contemplatively", "contently", "conveniently", "conversantly", "convincingly", "convivially", "coolly", "cooperatively", "cordially", "correctly", "cosily", "cosmically", "courageously", "courteously", "creatively", "credibly", "creditably", "cunningly", "cutely", "dapperly", "daringly", "dashingly", "dazzlingly", "dearly", "debonairly", "decently", "decisively", "decorously", "deeply", "defiantly", "definitely", "deftly", "delectably", "deliberately", "delicately", "delightedly", "delightfully", "dependably", "deservingly", "desirably", "determinedly", "devotedly", "devoutly", "dexterously", "differently", "diligently", "diplomatically", "directly", "disarmingly", "discerningly", "discretely", "discriminatingly", "distinctively", "diversely", "divinely", "dreamily", "durably", "dynamically", "eagerly", "earnestly", "easily", "ebulliently", "economically", "ecstatically", "edifyingly", "educationally", "effectively", "effectually", "effervescently", "efficiently", "effortlessly", "elaborately", "elatedly", "electrically", "elegantly", "eloquently", "eminently", "empathetically", "emphatically", "enchantingly", "encouragingly", "endearingly", "enduringly", "energetically", "engagingly", "engrossingly", "enjoyably", "enlighteningly", "enliveningly", "enrichingly", "enterprisingly", "enthrallingly", "enthusiastically", "enticingly", "entirely", "entrancingly", "equally", "equitably", "eruditely", "especially", "essentially", "ethically", "euphorically", "even-handedly", "evenly", "evocatively", "exactly", "exceedingly", "excellently", "exceptionally", "excitingly", "executively", "exhaustive", "exhilaratingly", "exotically", "expansively", "expectantly", "expeditiously", "expensively", "expertly", "explicitly", "expressively", "exquisitely", "extensively", "extraordinarily", "extravagantly", "exuberantly", "exultantly", "exultingly", "fabulously", "facilely", "fain", "fair", "fairly", "faithfully", "famously", "fantastically", "fascinatingly", "fashionably", "favorably", "fearlessly", "felicitously", "fertilely", "fervently", "festively", "fetchingly", "finely", "firm", "first", "first-rate", "fitly", "fittingly", "flamboyantly", "flat out", "flavorfully", "fleetly", "flexibly", "flourishingly", "fluently", "fondly", "forcefully", "foremost", "forever", "forgivingly", "formally", "forthrightly", "fortuitously", "fortunately", "forward", "frankly", "fraternally", "free", "freshly", "frolicsomely", "fruitfully", "full", "fully", "funnily", "futuristically", "gaily", "gainfully", "gallantly", "gamesomely", "generously", "genially", "gently", "genuinely", "gladly", "gleefully", "gloriously", "glowingly", "good-humoredly", "good-naturedly", "good-heartedly", "goodly", "gorgeously", "gracefully", "graciously", "gradely", "graithly", "grandly", "gratefully", "gratifyingly", "greatly", "guidingly", "gymnastically", "handily", "handsomely", "happily", "hardily", "harmlessly", "harmoniously", "healthily", "heartily", "helpfully", "heroically", "high-spiritedly", "highly", "hilariously", "hiply", "honestly", "honorably", "hopefully", "hospitably", "hotly", "humanely", "humbly", "humorously", "hygienically", "hypnotically", "idealistically", "ideally", "illuminatingly", "illustriously", "imaginatively", "immaculately", "immeasurably", "immediately", "impartially", "impassionedly", "impeccably", "importantly", "impressively", "incisively", "incredibly", "indefatigably", "independently", "indestructibly", "indispensably", "individualistically", "indomitably", "industriously", "infinitely", "jauntily", "jazzily", "jestingly", "jocosely", "jocularly", "jointly", "jokingly", "jovially", "joyfully", "joyously", "jubilantly", "judiciously", "justly", "laudably", "laughingly", "lavishly", "lawfully", "learnedly", "legitimately", "leniently", "level-headedly", "liberally", "liberatingly", "light-heartedly", "likely", "limberly", "literately", "lithely", "lordly", "lovably", "lovingly", "loyally", "lucidly", "luckily", "lucratively", "luminously", "lusciously", "lushly", "lustily", "lustrously", "luxuriantly", "luxuriously", "magically", "magnanimously", "magnetically", "magnificently", "main", "majestically", "majorly", "malleably", "managerially", "manly", "mannerly", "markedly", "marvelously", "masterfully", "masterly", "maternally", "meaningfully", "measurably", "meditatively", "mellowly", "melodiously", "mercifully", "meritoriously", "merrily", "mesmerizingly", "metaphysically", "meteorically", "methodically", "meticulously", "mightily", "mindfully", "miraculously", "mirthfully", "modestly", "morally", "most fortunately", "munificently", "muscularly", "musically", "mutually", "naturally", "neatly", "neighborly", "newly", "nicely", "niftily", "nimbly", "no end", "nobly", "notably", "noticeably", "objectively", "obligingly", "observantly", "once", "open-handedly", "open-heartedly", "open-mindedly", "openly", "opportunely", "optimally", "optimistically", "opulently", "originally", "outstandingly", "parentally", "particularly", "passionately", "paternally", "patiently", "peaceably", "peacefully", "perceptively", "perfectly", "permissively", "perseveringly", "persistently", "personally", "perspicaciously", "perspicuously", "persuasively", "pertly", "phenomenally", "philanthropically", "philosophically", "picturesquely", "piously", "piquantly", "placidly", "playfully", "please", "pleasingly", "pleasurably", "plenty", "plum", "poetically", "poignantly", "politely", "popularly", "positively", "powerfully", "practically", "pragmatically", "praiseworthily", "prayerfully", "preciously", "precisely", "preparedly", "prestigiously", "prevalently", "princely", "pristinely", "proactively", "prodigiously", "productively", "professionally", "proficiently", "profitably", "profoundly", "progressively", "prolifically", "prominently", "promisingly", "promptly", "proper", "properly", "prophetically", "propitiously", "prosperously", "protectively", "proudly", "provocatively", "prudently", "public-spiritedly", "punctually", "purely", "purposefully", "quaintly", "qualitatively", "queenly", "quick", "quickly", "quick-wittedly", "quietly", "quintessentially", "radiantly", "rapidly", "rapturously", "rationally", "ravishingly", "readily", "really", "reasonably", "reassuringly", "receptively", "reciprocally", "reflectively", "refreshingly", "regally", "relaxingly", "reliably", "remarkably", "reputably", "resiliently", "resolutely", "resoundingly", "resourcefully", "respectably", "respectfully", "resplendently", "responsibly", "responsively", "restfully", "restoratively", "retentively", "reverently", "rewardingly", "rhapsodically", "richly", "right", "righteously", "rightfully", "rightly", "risibly", "robustly", "rollickingly", "romantically", "rosily", "rousingly", "ruggedly", "safely", "sagaciously", "saliently", "salubriously", "sanguinely", "satisfactorily", "saucily", "scintillatingly", "scrumptiously", "scrupulously", "securely", "sedulously", "seemlessly", "self-confidently", "selflessly", "sensationally", "sensibly", "sensitively", "sensuously", "sentimentally", "serendipitously", "serenely", "sharp", "significantly", "simply", "sincerely", "skilfully", "sleekly", "smartly", "smashingly", "smilingly", "smoothly", "snugly", "sociably", "socially", "softly", "solicitously", "solidly", "soothingly", "sophisticatedly", "soulfully", "soundly", "specially", "spectacularly", "speedily", "spellbindingly", "spiritedly", "spiritually", "splendidly", "splendiferously", "spontaneously", "sportingly", "sportively", "sprightly", "square", "stably", "stalwartly", "stately", "statuesquely", "steadily", "straightforwardly", "strongly", "studiously", "stunningly", "stupendously", "stylishly", "suavely", "sublimely", "substantially", "subtly", "successfully", "succinctly", "sufficiently", "suitably", "sumptuously", "super", "superabundantly", "superbly", "superiorly", "supplely", "supportingly", "supportively", "supremely", "sure", "surely", "surprisingly", "sweet", "sweetly", "swiftly", "sympathetically", "synergistically", "tactfully", "tastefully", "tenderly", "terrifically", "therapeutically"]
@@ -152,14 +152,10 @@ function random_quote(num) {
   var quotes = [];
 
   for (var x = 0; x < num; x++) {
-    const sentence =
-  "The " +
-  random_array(positive_adjective, negative_adjective) + " " + randomiser(color) + " " + randomiser(noun) + " " + randomiser(verb) + " " + random_array(positive_adverb, negative_adverb) + " " + randomiser(preposition) + " " + "the" + " " + random_array(positive_adjective, negative_adjective) + " " + randomiser(noun) + ".";
 
-    const sentence2 =`The ${random_array(positive_adjective, negative_adjective)} ${randomiser(color)} ${randomiser(noun)} ${randomiser(verb)} ${random_array(positive_adverb, negative_adverb)} ${randomiser(preposition)} the ${random_array(positive_adjective, negative_adjective)} ${randomiser(noun)}.`;
+  const sentence =`The ${random_array(positive_adjective, negative_adjective)} ${randomiser(color)} ${randomiser(noun)} ${randomiser(verb)} ${random_array(positive_adverb, negative_adverb)} ${randomiser(preposition)} the ${random_array(positive_adjective, negative_adjective)} ${randomiser(noun)}.`;
 
-
-    quotes.push(sentence2);
+    quotes.push(sentence);
 
   }
   return quotes;
@@ -171,9 +167,8 @@ function happy_quote(num) {
   var quotes = [];
 
   for (var x = 0; x < num; x++) {
-    const sentence =
-  "The " +
-  randomiser(positive_adjective) + " " + randomiser(color) + " " + randomiser(noun) + " " + randomiser(verb) + " " + randomiser(positive_adverb) + " " + randomiser(preposition) + " " + "the" + " " + randomiser(positive_adjective) + " " + randomiser(noun) + ".";
+    const sentence = `The ${randomiser(positive_adjective)} ${randomiser(color)} ${randomiser(noun)} ${randomiser(verb)} ${randomiser(positive_adverb)} ${randomiser(preposition)} the ${randomiser(positive_adjective)} ${randomiser(noun)}.`;
+
 
     quotes.push(sentence);
 
@@ -187,10 +182,7 @@ function sad_quote(num) {
   var quotes = [];
 
   for (var x = 0; x < num; x++) {
-    const sentence =
-  "The " +
-  randomiser(negative_adjective) + " " + randomiser(color) + " " + randomiser(noun) + " " + randomiser(verb) + " " + randomiser(negative_adverb) + " " + randomiser(preposition) + " " + "the" + " " + randomiser(negative_adjective) + " " + randomiser(noun) + ".";
-
+    const sentence = `The ${randomiser(negative_adjective)} ${randomiser(color)} ${randomiser(noun)} ${randomiser(verb)} ${randomiser(negative_adverb)} ${randomiser(preposition)} the ${randomiser(negative_adjective)} ${randomiser(noun)}.`;
     quotes.push(sentence);
 
   }
